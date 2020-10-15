@@ -44,11 +44,16 @@
             <button class="operations" value="/">/</button>
 
             <br> <button class="number" value="0">0</button>
-            <button class="equal" value="=">=</button>
             <button class="operations" value="+">+</button>
             <button class="operations" value="-">-</button>
+            <button class="root" value="√">√</button>
             <br>
+            <br>
+            <button class="equal" value="=">Enter</button>
             <button class="clear">All Clear</button>
+            <br>
+            <br>
+            <br>
         </section>
     </div>
     <script src="script.js"></script>
@@ -79,6 +84,12 @@
                     $("#operation").text(operations)
                 } else { return }
             })
+            $(".root").on("click", function () {
+                if (numOne) {
+                    equal = Math.sqrt(numOne);
+                    $('#equal').text(equal);
+                }
+            })
             // function for equal
             $('.equal').on("click", function () {
                 numOne = parseInt(numOne);
@@ -99,7 +110,6 @@
                             break;
                         case "^":
                             equal = Math.pow(numOne, numTwo);
-                            console.log(Math.pow(4, 4))
                             break;
                     }
                     $('#equal').text(equal);

@@ -1,30 +1,36 @@
-body{
-    margin-top: 50px;
-    text-align: center;
-        align-content: center;
+body {
+  margin-top: 50px;
+  text-align: center;
+  align-content: center;
 }
-.container{
-    text-align: center;
-    align-content: center;
+.container {
+  text-align: center;
+  align-content: center;
 }
-section{
-    background-color: sandybrown;
-    margin: auto;
-    width: 50%;
+section {
+  background-color: sandybrown;
+  margin: auto;
+  width: 50%;
 }
-button{
-    margin: 5px;
-    text-align: center;
-    width: 40px;
-    background-color: black;
-    color: white;
+button {
+  margin: 5px;
+  text-align: center;
+  width: 40px;
+  background-color: black;
+  color: white;
 }
-div{
-    text-align: center;
+div {
+  text-align: center;
 }
-button.clear{
-    background-color: red;
-    color: white;
-    margin: 5px;
-    width: 100px
+button.clear {
+  background-color: red;
+  color: white;
+  margin: auto;
+  width: 25%;
+}
+button.equal {
+  background-color: lime;
+  color: black;
+  width: 25%;
+  margin: auto;
 }
