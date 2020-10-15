@@ -4,7 +4,13 @@ body{
         align-content: center;
 }
 .container{
+    text-align: center;
+    align-content: center;
+}
+section{
     background-color: sandybrown;
+    margin: auto;
+    width: 50%;
 }
 button{
     margin: 5px;

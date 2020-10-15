@@ -13,12 +13,13 @@
 
 <body>
     <div class="container">
-        <h2>This is the MIGHTY CALCULATOR!</h2>
+        <h2>MIGHTY CALCULATOR!</h2>
         <br>
         <section>
+            <br>
             <div class="row">
                 <div class="col"></div>
-                <h2 id="numOne"></h2>
+                <h2 id="numOne">Let's Solve It!</h2>
                 <h2 id="operation"></h2>
                 <h2 id="numTwo"></h2>
 
@@ -26,10 +27,8 @@
             </div>
 
             <h2> Result: <span id="equal"></span></h2>
-        </section>
-        <section>
-            <div class="row"></div>
-            <button class="number" value="1">1</button>
+<hr>
+            <br> <button class="number" value="1">1</button>
             <button class="number" value="2">2</button>
             <button class="number" value="3">3</button>
             <button class="operations" value="^">^</button>
@@ -39,21 +38,18 @@
             <button class="number" value="6">6</button>
             <button class="operations" value="x">x</button>
 
-            <div class="row"></div>
-            <button class="number" value="7">7</button>
+            <br> <button class="number" value="7">7</button>
             <button class="number" value="8">8</button>
             <button class="number" value="9">9</button>
             <button class="operations" value="/">/</button>
 
-            <div class="row"></div>
-            <button class="number" value="0">0</button>
+            <br> <button class="number" value="0">0</button>
             <button class="equal" value="=">=</button>
             <button class="operations" value="+">+</button>
             <button class="operations" value="-">-</button>
+            <br>
+            <button class="clear">All Clear</button>
         </section>
-
-
-        <button class="clear">All Clear</button>
     </div>
     <script src="script.js"></script>
     <script>
@@ -116,7 +112,7 @@
                 numTwo = "";
                 operations = '';
                 equal = '';
-                $('#numOne').text('');
+                $('#numOne').text(`Let's Solve It!`);
                 $('#numTwo').text('');
                 $('#operation').text('');
                 $('#equal').text('');
