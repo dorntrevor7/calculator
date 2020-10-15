@@ -14,37 +14,46 @@
 <body>
     <div class="container">
         <h2>This is the MIGHTY CALCULATOR!</h2>
-        <div class="row">
+        <br>
+        <section>
+            <div class="row">
+                <div class="col"></div>
+                <h2 id="numOne"></h2>
+                <h2 id="operation"></h2>
+                <h2 id="numTwo"></h2>
+
+                <div class="col"></div>
+            </div>
+
+            <h2> Result: <span id="equal"></span></h2>
+        </section>
+        <section>
+            <div class="row"></div>
             <button class="number" value="1">1</button>
             <button class="number" value="2">2</button>
             <button class="number" value="3">3</button>
-            <button class="operations" value="pow">x<span>y</span></button></div>
-        <div class="row">
+            <button class="operations" value="^">^</button>
+            <div class="row"> </div>
             <button class="number" value="4">4</button>
             <button class="number" value="5">5</button>
             <button class="number" value="6">6</button>
-            <button class="operations" value="*">x</button>
-        </div>
-        <div class="row">
+            <button class="operations" value="x">x</button>
+
+            <div class="row"></div>
             <button class="number" value="7">7</button>
             <button class="number" value="8">8</button>
             <button class="number" value="9">9</button>
             <button class="operations" value="/">/</button>
-        </div>
-        <div class="row">
+
+            <div class="row"></div>
             <button class="number" value="0">0</button>
+            <button class="equal" value="=">=</button>
             <button class="operations" value="+">+</button>
             <button class="operations" value="-">-</button>
-            <button class="equal" value="=">=</button></div>
-
-
-
-        <section>
-            <h2 id="numOne">NumOne</h2>
-            <h2 id="operation">operation</h2>
-            <h2 id="numTwo">NumTwo</h2>
-            <h2 id="equal">Equals</h2>
         </section>
+
+
+        <button class="clear">All Clear</button>
     </div>
     <script src="script.js"></script>
     <script>
@@ -82,28 +91,35 @@
                     switch (operations) {
                         case "+":
                             equal = numOne + numTwo;
-                            console.log(result);
                             break;
                         case "-":
-                            equal = numOne + numTwo;
-                            console.log(result);
+                            equal = numOne - numTwo;
                             break;
                         case "/":
-                            equal = numOne + numTwo;
-                            console.log(result);
+                            equal = numOne / numTwo;
                             break;
-                        case "*":
-                            equal = numOne + numTwo;
-                            console.log(result);
+                        case "x":
+                            equal = numOne * numTwo;
+                            break;
+                        case "^":
+                            equal = Math.pow(numOne, numTwo);
+                            console.log(Math.pow(4, 4))
                             break;
                     }
                     $('#equal').text(equal);
-                    numOne = ''
-                    numTwo = ''
-                    operations = ''
                 } else {
                     return
                 }
+            })
+            $('.clear').on("click", function () {
+                numOne = "";
+                numTwo = "";
+                operations = '';
+                equal = '';
+                $('#numOne').text('');
+                $('#numTwo').text('');
+                $('#operation').text('');
+                $('#equal').text('');
             })
         })
     </script>

@@ -1,6 +1,10 @@
 body{
+    margin-top: 50px;
     text-align: center;
         align-content: center;
+}
+.container{
+    background-color: sandybrown;
 }
 button{
     margin: 5px;
@@ -9,6 +13,12 @@ button{
     background-color: black;
     color: white;
 }
-span{
-    padding-bottom: 20px;
+div{
+    text-align: center;
+}
+button.clear{
+    background-color: red;
+    color: white;
+    margin: 5px;
+    width: 100px
 }
