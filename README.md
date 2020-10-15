@@ -11,3 +11,4 @@ This application is used for calculating
 - Square Root
 
 Check out the site!
+https://dorntrevor7.github.io/calculator/
